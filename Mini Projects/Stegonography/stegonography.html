@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stegonography Example</title>
+        <script type="text/javascript" src="stegonography.js"></script>
+        <script type="text/javascript" src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <link rel="stylesheet" href="stegonography.css">
+    </head>
+    <body>
+        <h2>Stegonography Project</h2>
+        
+        <canvas id="main_canvas"></canvas>
+        <canvas id="hidden_canvas"></canvas>
+        <canvas id="encoded_canvas"></canvas>
+        <canvas id="decoded_canvas"></canvas>
+        <br/>
+        <div id="file_upload_div">
+            <h3>Upload Files</h3>
+            <input type="file" multiple="false" accept="image/*" id="main_file_input" onchange="loadMainImage()">
+            <input type="file" multiple="false" accept="image/*" id="hidden_file_input" onchange="loadHiddenImage()">
+        </div> 
+        <div id="buttons_div">
+            <input class="button" type="button" value="Show Cleared Image" onclick="showClearedImage()">
+            <input class="button" type="button" value="Show Masked Image" onclick="showMaskedImage()">
+            <input class="button" type="button" value="Combine Images" onclick="showEncodedImage()">
+            <input class="button" type="button" value="Decode Image" onclick="showDecodedImage()">
+            <input class="button" type="button" value="Clear Images" onclick="resetPage()">
+        </div>
+    </body>
+</html>

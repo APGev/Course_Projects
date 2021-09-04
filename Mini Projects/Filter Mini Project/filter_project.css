@@ -1,0 +1,30 @@
+canvas {
+    width: 600;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid darkgray;
+}
+
+#file_upload_div {
+    background-color: lightcyan;
+    border-top: dashed black 5px;
+}
+
+#filters_div {
+    background-color: rgb(167, 241, 241);
+}
+
+body {
+    text-align: center;
+    background-color:lightgray;
+}
+
+#file_input {
+    padding: 5px;
+    font-size:20px;
+}
+
+#filter_button {
+    padding: 3px;
+    font-size:16px
+}

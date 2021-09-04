@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Filter Mini Project</title>
+        <link rel="stylesheet" href="filter_project.css">
+        <script type="text/javascript" src="filter_project.js"></script>
+        <script type="text/javascript" src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    </head>
+    <body>
+        <h2>Filter Mini Project</h2>
+        
+        <canvas id="main_canvas"></canvas>
+        <br/>
+        <div id="file_upload_div">
+            <h3>Upload File</h3>
+            <input type="file" multiple="false" accept="image/*" id="file_input" onchange="loadImage()">
+        </div> 
+        <div id="filters_div">
+            <input class="filter_button" type="button" value="Grayscale" onclick="grayscaleFilter()">
+            <input class="filter_button" type="button" value="Red" onclick="redFilter()">
+            <input class="filter_button" type="button" value="Mirror" onclick="mirrorFilter()">
+            <input class="filter_button" type="button" value="Flip" onclick="flipFilter()">
+            <input class="filter_button" type="button" value="Rainbow" onclick="rainbowFilter()">
+            <input class="filter_button" type="button" value="Blur" onclick="blurFilter()">
+            <input class="filter_button" type="button" value="Reset Filter" onclick="resetFilter()">
+            <input class="filter_button" type="button" value="Clear Canvas" onclick="clearCanvas()">
+        </div>
+    </body>
+</html>
