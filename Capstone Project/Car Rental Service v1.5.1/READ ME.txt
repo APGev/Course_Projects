@@ -1,0 +1,23 @@
+Car Rental Service (Customer Portion) v1.5.1
+12/14/2020 @ 7:02pm
+By: Gavin Tichi
+
+Car Rental Service v1.5.1 is the final version of the Car Rental Service Project. The Group members are: Ndatta Fall (Project Manager), Aferu Minas, Matthew Mason, Jasmine Simpson, Eric Victor, and Gavin Tichi. This Project allows a user to create an account, log in, place a reservation for a car rental, and return said car rental. The Car Rental Service is our Final Project for CMSC 495 with Professor Douglas Mujeye.
+
+For this version of the Car Rental Service program, the user will need to have a MySQL Server running on their local computer. The required software is listed below, with the version numbers in parenthesis:
+ - MySQL Server (v5.7.32 x64)
+ - MySQL Workbench (v8.0.22 x64)
+The Server allows the computer to run connections to it for running the Car Rental Service, while the Workbench allows the user to easily run commands and check on the status of both the server and the database. Connector/J provides NetBeans with the driver necessary for connecting to MySQL, which is included with the v1.5.1 project. 
+
+In order to use the Car Rental System, you will need to set up the MySQL Server on your machine that serves as the host for the website's database. To do so, you will need to open the MySQL Workbench and create a Server. You will also need to adjust the firewall settings as well as add in Admin properties linking your server to the required files. Information on this can be found in the link below. During setup, ensure that you create a user with the following credentials:
+ - Username: root
+ - Password: root
+Detailed information for the Server setup are here: https://netbeans.org/kb/docs/ide/mysql.html#configuring
+
+After creating the MySQL Server, you will need to run the SQL scripts to create the necessary schema and populate it with data. Once you've got the server running, run the UpdatedDatabaseSQL.sql file, then run the InitialData.sql file. These can be found in the SQL Source bundled in the ZIP file alongside v1.5.1.
+
+After creating the Database and running the MySQL Server on your machine, you are ready to launch the NetBeans project. Hitting Run should compile the code and launch the project through your default Internet Browser. From there, the pre-loaded user's account information is as follows:
+ - Username: testuser@gmail.com
+ - Password: Password1!
+
+Frequentlyl Asked Questions on the use of the website can be found in the Car Rental Service User Guide as well as the FAQ link present on the website.

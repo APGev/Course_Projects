@@ -1,0 +1,29 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<header>
+    <h1 class="title"> Car Rental Service </h1>
+    <nav>
+        <!-- Site Navigation Menu -->
+        <div id="menu-outer">
+            <div class="menu">
+                <ul id="horizontal-list">
+                    <li><a href="home.jsp">Home</a></li>
+                    <%-- Display these links if not logged in --%>
+                    <% if (session.getAttribute("email") == null) { %>
+                    <li><a href="login.jsp">Log In</a></li>
+                    <li><a href="registration.jsp">Register User</a></li>
+                    <li><a href="faq.jsp">FAQs</a></li>
+                    <% } %>
+                    <%-- Display these links if logged in --%> 
+                    <% if (session.getAttribute("email") != null) { %>
+                    <li><a href="reservation.jsp">Make Reservation</a></li>
+                    <li><a href="return.jsp">Return Reservation</a></li>
+                    <li><a href="account.jsp">Account Settings</a></li>
+                    <li><a href="faq.jsp">FAQs</a></li>
+                    <li><a href="logout.jsp">Log Out</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

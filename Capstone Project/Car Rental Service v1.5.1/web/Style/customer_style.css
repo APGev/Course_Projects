@@ -1,0 +1,109 @@
+/* 
+    Author     : Gavin Tichi
+    Created    : 12/1/2020
+    For        : Basic Style Sheet for Customer Forms
+*/
+/*
+    Universal Selector for Consistent Style (Font)
+*/
+* {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size:16px;
+}
+/*
+    Navigation Menu Display
+*/
+.menu {
+    font-family: verdana;
+    text-align: center;
+    width:100%;
+}
+ul#horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul#horizontal-list li {
+    float: left;
+}
+ul#horizontal-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+ul#horizontal-list li a:hover {
+    background-color: #a6a6a6;
+}
+/*
+    Project Title
+*/
+h1.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 80px;
+}
+/*
+    System Messages (Notice of successes)
+*/
+.systemMsg {
+    color: blue;
+}
+/*
+    Error Messages (Notice of failures)
+*/
+.errorMsg {
+    color: red;
+}
+body {
+    text-align: center;
+    background-color: blueviolet;
+}
+/*
+    Form Table Formatting
+*/
+table.form {
+    border-style: none;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+}
+table.form tr td {
+    padding: 10px;
+}
+input[type=submit] {
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 250px;
+}
+/*
+    For Car Rental List
+*/
+#car-container {
+  height: 500px;
+  border: 1px black solid;
+  text-align:center;
+  margin: 0 auto;
+  float: left;
+  width: 350px;
+}
+#scrollable-content {
+  height: 499px;
+  overflow: auto;
+  background-color: #e6e6e6;
+  text-align:center;
+  margin: 0 auto;
+}
+#header {
+  height: 35px;
+  background-color: #bfbfbf;
+}
+
+#faq {
+    background-color: #aaa9ad;
+}

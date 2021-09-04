@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Used information from https://docs.oracle.com/cd/E13222_01/wls/docs92/webapp/configureservlet.html#wp120130 -->
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	 version="4.0">
+    <!-- Servlet for Customer Login Authentication class -->
+    <servlet>
+        <servlet-name>Authentication</servlet-name>
+        <servlet-class>CustomerSystem.Authentication</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Customer Registration class -->
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>CustomerSystem.Registration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Customer Password Reset class -->
+    <servlet>
+        <servlet-name>PasswordReset</servlet-name>
+        <servlet-class>CustomerSystem.PasswordReset</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PasswordReset</servlet-name>
+        <url-pattern>/PasswordReset</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Car Return class -->
+    <servlet>
+        <servlet-name>CarReturn</servlet-name>
+        <servlet-class>CustomerSystem.CarReturn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CarReturn</servlet-name>
+        <url-pattern>/CarReturn</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Extend class -->
+    <servlet>
+        <servlet-name>Extend</servlet-name>
+        <servlet-class>CustomerSystem.Extend</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Extend</servlet-name>
+        <url-pattern>/Extend</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Reservation class -->
+    <servlet>
+        <servlet-name>Reservation</servlet-name>
+        <servlet-class>CustomerSystem.Reservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Reservation</servlet-name>
+        <url-pattern>/Reservation</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Account Settings class -->
+    <servlet>
+        <servlet-name>AccountSettings</servlet-name>
+        <servlet-class>CustomerSystem.AccountSettings</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountSettings</servlet-name>
+        <url-pattern>/AccountSettings</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <!-- This dictates what file to open on startup (home page) -->
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- SMTP Server Settings for Email Sending of PasswordReset -->
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>smtp.gmail.com</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>587</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>CapstoneCarRentalSystem@gmail.com</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>Car Rental Service Project</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>CarRentalSystem1215!</param-value>
+    </context-param>
+</web-app>
